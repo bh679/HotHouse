@@ -8,7 +8,7 @@
 
 ### Setup Guide <br />
  - Clone
- - Rename ``BNG Framework1`` to ``BNG Framework``
+ - Duplicate and Rename ``BNG Framework1`` to ``BNG Framework``
  - Open in Unity (Enter safe mode)
  - Import [BNG VRIF](https://assetstore.unity.com/packages/templates/systems/vr-interaction-framework-161066) (without project settings, yes to updating scripts)
  - Get private keys ([open ai](https://beta.openai.com/account/api-keys), [ms cog](https://azure.microsoft.com/en-us/products/cognitive-services/text-to-speech/), [PUN](https://www.photonengine.com/pun))
