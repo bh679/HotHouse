@@ -1,13 +1,15 @@
 # HotHouse
 
+An in-development narrative based VR escaperoom.<br />
+<br />
 You are trapped in a luxurious hot-house against your will. <br >
 How did you end up here?<br >
 Who put you here? <br >
 For that matter, who are you ? <br >
 And what does the Mafia have to do with it? <br >
-
+<br />
 <img src="https://user-images.githubusercontent.com/2542558/222054923-4b4e9339-bdea-4fd9-8bb2-edbce7e5aff8.png" width=50%/>
-
+<br />
 
 ## Open Source Project Guide
 
