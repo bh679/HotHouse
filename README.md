@@ -4,7 +4,7 @@ You are trapped in a luxurious hot-house against your will. <br >
 How did you end up here?<br >
 Who put you here? <br >
 For that matter, who are you ? <br >
-And what does the marfi have to do with it? <br >
+And what does the Mafia have to do with it? <br >
 
 ## Open Source Project Guide
 
