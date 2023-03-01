@@ -26,7 +26,7 @@ And what does the Mafia have to do with it? <br >
 # Todo
 ### Due Next Week
  - Build House (Wilson)
- - Add Puzzle (Wilsone)
+ - Add Puzzle (Wilson)
  - Build Puzzle 2 (Brennan)
  
 ### Puzzle 2
