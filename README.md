@@ -11,3 +11,16 @@
  - Duplicate and Move ``BNG Framework 1`` to ``Assets/BNG Framework``
  - Open in Unity (Enter safe mode)
  - Import [BNG VRIF](https://assetstore.unity.com/packages/templates/systems/vr-interaction-framework-161066) (without project settings, yes to updating scripts)
+
+# Todo
+### Puzzle 1 
+ Get code from Dungeon Train for itle place and reading
+ 
+### Puzzle 2
+Find Gun
+Put in a place. 
+Button that makes Gun point at you.
+Button that makes Gun fire.
+
+### Puzzle 3
+Scale that allwos you to weight objects placed on it.
