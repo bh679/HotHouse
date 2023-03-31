@@ -24,6 +24,11 @@ public class Scale : MonoBehaviour
 	public string errorMessage = "invalid";
 	public string defaultMessage = "0.0 kg";
 	
+	void Start()
+	{
+		weight = defaultMessage;
+		displayText.text = weight;
+	}
 	
 	private void OnTriggerEnter(Collider other)
 	{
