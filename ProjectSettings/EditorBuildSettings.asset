@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/BNG Framework/Scenes/Scene Transitioning.unity
     guid: 9d7c9629abf9c99449e358b0938b47d0
-  - enabled: 1
+  - enabled: 0
     path: Assets/BNG Framework/Scenes/Physics Hands.unity
     guid: 34a4579517c578e4080d0a6ef2c96294
   - enabled: 0
@@ -23,15 +23,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/BNG Framework/Scenes/Quest Demo.unity
     guid: eac0312c32df12949a47d07747a9d1cd
+  - enabled: 1
+    path: Assets/Hot House/Scenes/Quest Demo.unity
+    guid: 02f2173a14beff94bbedb28499049895
   m_configObjects:
-    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 95738646979e66347937d1a88ead7f33,
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: ec4f9ae55764d2b4cb0d20755774baec,
       type: 2}
     Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: 2ec24d39f7b5ac84aad7e5df7b4fd3ea,
       type: 2}
     WebXR.Settings: {fileID: 11400000, guid: fe9659bb224bb054bb1dbca065d1d318, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 7c0d65f8139523c47a3ac0b1587ccdf6,
       type: 2}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: bc87842975b39e54c9a8257bb65aef55,
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: f51dd1642f893be40ba0c4598c7428e9,
       type: 2}
     xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: 2ae0a4a226e8d9e4aba56d1e2eb3977b,
       type: 2}
