@@ -16,16 +16,36 @@ public class WeightTargetsReached : MonoBehaviour
     {
 	    targets = this.GetComponentsInChildren<WeightTarget>();
     }
+    
+	void Start()
+	{
+		
+		for(int i =0 ;i < targets.Length; i++)
+		{
+			targets[i].onFound.AddListener(()=>{CheckAllFound();});
+		}
+	}
 
     // Update is called once per frame
     void Update()
     {
-	    if(((alreadyRun && runOnce) || !runOnce) && CheckFound())
+	    /*if(((alreadyRun && runOnce) || !runOnce) && CheckFound())
 	    {
 	    	onAllReached.Invoke();
 	    	alreadyRun = true;
-	    }
+	    }*/
     }
+    
+	public void CheckAllFound()
+	{
+		if(alreadyRun)
+			return;
+			
+		if(!CheckFound())
+			return;
+			
+		onAllReached.Invoke();
+	}
     
 	public bool CheckFound()
 	{

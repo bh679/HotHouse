@@ -13,6 +13,7 @@ public class SnapzoneLockGameObject : MonoBehaviour
 	public bool Correct{get{return correct;}}
 	public bool dropIfWrong = true, lockIfRight = false;
 	public float incorrectDropTime;
+	public Vector3 dropForce = Vector3.zero;
 	
 	void Reset()
 	{
@@ -47,7 +48,11 @@ public class SnapzoneLockGameObject : MonoBehaviour
 		yield return new WaitForSeconds(time);
 		
 		if(dropIfWrong)
+		{
+			Grabbable grabbedObj = snapZone.HeldItem;
 			snapZone.ReleaseAll();
+			grabbedObj.GetComponent<Rigidbody>().AddForce(dropForce);
+		}
 		onIncorrect.Invoke();
 	}
 }

@@ -329,6 +329,7 @@ MonoBehaviour:
   dropIfWrong: 1
   lockIfRight: 1
   incorrectDropTime: 1
+  dropForce: {x: 0, y: 150, z: -20}
 --- !u!135 &5953372153065240485
 SphereCollider:
   m_ObjectHideFlags: 0

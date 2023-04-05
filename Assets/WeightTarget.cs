@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class WeightTarget : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class WeightTarget : MonoBehaviour
 	public bool found = false;
 	public MeshRenderer light;
 	public bool useTarget;
+	public UnityEvent onFound;
 	
 	void Start()
 	{
@@ -33,6 +35,8 @@ public class WeightTarget : MonoBehaviour
 			found = true;
 			
 			light.material = foundMat;
+			
+			onFound.Invoke();
 		}
 	}
 }

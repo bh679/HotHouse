@@ -16,15 +16,15 @@ public class PuzzleManager : MonoBehaviour
 		
 		switch(puzzlesComplete)
 		{
-		case 0:
+		case 1:
 			onFirst.Invoke();
 			break;
 			
-		case 1:
+		case 2:
 			onSecond.Invoke();
 			break;
 			
-		case 2:
+		case 3:
 			onThird.Invoke();
 			break;
 			

@@ -9,6 +9,7 @@ public class Puzzle2 : MonoBehaviour
 	public Lever level;
 	public UnityEvent onComplete;
 	bool leverDown;
+	bool complete = false;
 	
 	public void Start()
 	{
@@ -18,7 +19,13 @@ public class Puzzle2 : MonoBehaviour
 	
 	public void CheckLever()
 	{
+		if(complete)
+			return;
+			
 		if(leverDown)
+		{
 			onComplete.Invoke();
+			complete = true;
+		}
 	}
 }
