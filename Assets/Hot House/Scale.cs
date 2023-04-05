@@ -50,9 +50,12 @@ public class Scale : MonoBehaviour
     
 	void WeightCalc(Collider other)
 	{
-		if(target != null && target != other)
-			weight = tooManyItemsMessage;
-		else{
+		/*if(target != null && target != other)
+		{
+			//weight = tooManyItemsMessage;
+			Debug.Log(tooManyItemsMessage);
+		}
+		else{*/
 				
 			target = other.gameObject.GetComponent<Weight>();
 				
@@ -60,7 +63,7 @@ public class Scale : MonoBehaviour
 				weight = errorMessage;
 			else
 				weight = target.weight.ToString() + measurement;
-		}
+		//}
 		
 		displayText.text = weight;
 			

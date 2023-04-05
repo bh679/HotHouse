@@ -11,6 +11,8 @@ public class SnapzoneLockGameObject : MonoBehaviour
 	public SnapZone snapZone;
 	bool correct = false;
 	public bool Correct{get{return correct;}}
+	public bool dropIfWrong = true, lockIfRight = false;
+	public float incorrectDropTime;
 	
 	void Reset()
 	{
@@ -26,12 +28,26 @@ public class SnapzoneLockGameObject : MonoBehaviour
 	{
 		if(grabbable == target)
 		{
-			snapZone.CanRemoveItem = false;
-			snapZone.CanDropItem = false;
-			snapZone.CanSwapItem = false;
+			if(lockIfRight)
+			{
+				snapZone.CanRemoveItem = false;
+				snapZone.CanDropItem = false;
+				snapZone.CanSwapItem = false;
+			}
 			correct = true;
 			onCorrect.Invoke();
 		}else
-			onIncorrect.Invoke();
+		{
+			StartCoroutine(dropAfterTime(incorrectDropTime));
+		}
+	}
+	
+	IEnumerator dropAfterTime(float time)
+	{
+		yield return new WaitForSeconds(time);
+		
+		if(dropIfWrong)
+			snapZone.ReleaseAll();
+		onIncorrect.Invoke();
 	}
 }
