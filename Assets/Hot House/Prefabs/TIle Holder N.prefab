@@ -326,9 +326,9 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   snapZone: {fileID: 5953372153065240484}
-  dropIfWrong: 0
+  dropIfWrong: 1
   lockIfRight: 1
-  incorrectDropTime: 0
+  incorrectDropTime: 1
 --- !u!135 &5953372153065240485
 SphereCollider:
   m_ObjectHideFlags: 0
