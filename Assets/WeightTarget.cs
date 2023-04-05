@@ -9,6 +9,7 @@ public class WeightTarget : MonoBehaviour
 	public List<Weight> targets;
 	public bool found = false;
 	public MeshRenderer light;
+	public bool useTarget;
 	
 	void Start()
 	{
@@ -25,6 +26,10 @@ public class WeightTarget : MonoBehaviour
 			
 		if(targets.Contains(scale.target))
 		{
+			if(useTarget)
+				if(scale.target.weight != scale.target.targetWeight)
+					return;
+					
 			found = true;
 			
 			light.material = foundMat;
