@@ -1,5 +1,54 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1719640635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1719640636}
+  - component: {fileID: 1719640637}
+  m_Layer: 0
+  m_Name: Teleport (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1719640636
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719640635}
+  m_LocalRotation: {x: -0, y: 0.745031, z: -0, w: 0.6670299}
+  m_LocalPosition: {x: -85.943, y: 1.705, z: 206.664}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2748900794137986036}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 96.324, z: 0}
+--- !u!114 &1719640637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719640635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b4cde4cf3c67744fa0394839eb46dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DestinationTransform: {fileID: 1719640636}
+  ForcePlayerRotation: 1
+  OnPlayerTeleported:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2748900794137986037
 GameObject:
   m_ObjectHideFlags: 0
@@ -9,6 +58,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2748900794137986036}
+  - component: {fileID: 1277334376}
   m_Layer: 0
   m_Name: CutScene 2
   m_TagString: Untagged
@@ -30,9 +80,41 @@ Transform:
   m_Children:
   - {fileID: 2748900794850619303}
   - {fileID: 2748900794942934898}
+  - {fileID: 1719640636}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1277334376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2748900794137986037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66563b6a4e0c2b74b90057612789d8a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 0
+  TimedEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  repeats: 0
+  onEnable: 1
+  repeatOnEnable: 0
 --- !u!1 &2748900794850619296
 GameObject:
   m_ObjectHideFlags: 0
@@ -43,6 +125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2748900794850619303}
   - component: {fileID: 2748900794850619302}
+  - component: {fileID: 379387702}
   m_Layer: 0
   m_Name: Audio Source (1)
   m_TagString: Untagged
@@ -161,6 +244,40 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &379387702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2748900794850619296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33762ea79320ec048941dcebad80801a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onFinish:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  onStart:
+    m_PersistentCalls:
+      m_Calls: []
+  isAlreadyTalking_notContinuous:
+    m_PersistentCalls:
+      m_Calls: []
+  continuous: 0
 --- !u!1001 &1244829357221887713
 PrefabInstance:
   m_ObjectHideFlags: 0
