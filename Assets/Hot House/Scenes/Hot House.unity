@@ -53832,9 +53832,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1339086601, guid: a448086d85a7f4021b8329fd4098a62d, type: 3}
       propertyPath: m_text
-      value: 'Brennan Hatton
+      value: 'Wilson Tayor
 
-        Wilson Tayor'
+        Brennan Hatton
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 1339086601, guid: a448086d85a7f4021b8329fd4098a62d, type: 3}
       propertyPath: m_fontColor.a
