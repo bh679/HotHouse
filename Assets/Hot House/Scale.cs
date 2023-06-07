@@ -57,12 +57,12 @@ public class Scale : MonoBehaviour
 		}
 		else{*/
 				
-			target = other.gameObject.GetComponent<Weight>();
-				
-			if(target == null)
-				weight = errorMessage;
-			else
-				weight = target.weight.ToString() + measurement;
+		target = other.gameObject.GetComponent<Weight>();
+			
+		if(target == null)
+			weight = errorMessage;
+		else
+			weight = target.weight.ToString() + measurement;
 		//}
 		
 		displayText.text = weight;
@@ -82,7 +82,18 @@ public class Scale : MonoBehaviour
 				return;
 			}
 			
-			WeightCalc(other);
+			Weight weightT = other.gameObject.GetComponent<Weight>();
+		
+			if(weightT != null)
+				target = weightT;
+			
+			if(target == null)
+				weight = errorMessage;
+			else
+				weight = target.weight.ToString() + measurement;
+			//}
+		
+			displayText.text = weight;
 			
 			//Debug.Log(other);
 			onTriggerStayEvent.Invoke();

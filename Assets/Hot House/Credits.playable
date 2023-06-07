@@ -1801,7 +1801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
   m_Name: Signal Emitter
   m_EditorClassIdentifier: 
-  m_Time: 30.19920833333333
+  m_Time: 46.94841666666666
   m_Retroactive: 0
   m_EmitOnce: 0
   m_Asset: {fileID: 11400000, guid: 10d90e46deeae4ab583004078126e86c, type: 2}
@@ -1894,7 +1894,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: born-from-ash_TK11403900
+    m_DisplayName: SoundTrack
   m_Markers:
     m_Objects: []
   m_TrackProperties:
@@ -1978,7 +1978,7 @@ MonoBehaviour:
   m_Loop: 0
   m_bufferingTime: 0.1
   m_ClipProperties:
-    volume: 1
+    volume: 0
 --- !u!114 &7914265514635600442
 MonoBehaviour:
   m_ObjectHideFlags: 1

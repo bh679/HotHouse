@@ -33,7 +33,7 @@ namespace BrennanHatton.UnityTools.LegacyUI
 			for(int i = 0; i < time*10; i++)
 			{
 				yield return new WaitForSeconds(0.1f);
-				Debug.Log(i/(time*10) + " " + text.color.maxColorComponent);
+				//Debug.Log(i/(time*10) + " " + text.color.maxColorComponent);
 				text.color = new Color(textColor.r,textColor.g,textColor.b,i/(time*10));
 			}
 			text.color = new Color(textColor.r,textColor.g,textColor.b,255);
