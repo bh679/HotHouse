@@ -57,7 +57,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1277756710}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.0483, y: 0.035, z: 0.0652}
+  m_LocalPosition: {x: 0.0483, y: 0.035, z: 0.07}
   m_LocalScale: {x: 0.09999998, y: 0.1, z: 0.10000001}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -207,6 +207,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1151911144841821561}
   - component: {fileID: 1433997909258340658}
+  - component: {fileID: 452887053}
   m_Layer: 0
   m_Name: IncorrectLine
   m_TagString: Untagged
@@ -238,7 +239,8 @@ AudioSource:
   m_GameObject: {fileID: 642424144783264255}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -8377157102972669868, guid: bc28e3096309c4ac8b4ec947f369f43a,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: b1405bebbf7a241e88a451cb910eb218, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -325,6 +327,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &452887053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642424144783264255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66563b6a4e0c2b74b90057612789d8a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 0
+  TimedEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1433997909258340658}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  repeats: 0
+  onEnable: 1
+  repeatOnEnable: 0
 --- !u!1 &804404810185944175
 GameObject:
   m_ObjectHideFlags: 0
@@ -527,6 +560,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5790339134005197455}
   - component: {fileID: 6941865505020561225}
+  - component: {fileID: 1050155913}
   m_Layer: 0
   m_Name: CorrectLine
   m_TagString: Untagged
@@ -558,7 +592,8 @@ AudioSource:
   m_GameObject: {fileID: 2389527974011260998}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -8377157102972669868, guid: bc28e3096309c4ac8b4ec947f369f43a,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: c3ca6eb97b7744eceaec241efa99da64, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -645,6 +680,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1050155913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2389527974011260998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66563b6a4e0c2b74b90057612789d8a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 0
+  TimedEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6941865505020561225}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  repeats: 0
+  onEnable: 1
+  repeatOnEnable: 0
 --- !u!1 &3312090871665568627
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,6 +721,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1006279854892557166}
   - component: {fileID: 6171116377248053074}
+  - component: {fileID: 185082362}
   m_Layer: 0
   m_Name: GrabTileLine
   m_TagString: Untagged
@@ -686,7 +753,8 @@ AudioSource:
   m_GameObject: {fileID: 3312090871665568627}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -8377157102972669868, guid: bc28e3096309c4ac8b4ec947f369f43a,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 7ad57e2c8fcbf4690a59542bee25accd, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -773,6 +841,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &185082362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3312090871665568627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66563b6a4e0c2b74b90057612789d8a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 5
+  TimedEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6171116377248053074}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  repeats: 0
+  onEnable: 1
+  repeatOnEnable: 0
 --- !u!1 &6038728635530065819
 GameObject:
   m_ObjectHideFlags: 0
@@ -995,17 +1094,17 @@ PrefabInstance:
     - target: {fileID: 679009786153713173, guid: b543a89e2f3be4e14b7d5cc61b4a0f77,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.754
+      value: 0.588
       objectReference: {fileID: 0}
     - target: {fileID: 679009786153713173, guid: b543a89e2f3be4e14b7d5cc61b4a0f77,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.068
+      value: -3.473
       objectReference: {fileID: 0}
     - target: {fileID: 679009786153713173, guid: b543a89e2f3be4e14b7d5cc61b4a0f77,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.521
+      value: 6.941
       objectReference: {fileID: 0}
     - target: {fileID: 679009786153713173, guid: b543a89e2f3be4e14b7d5cc61b4a0f77,
         type: 3}
@@ -1171,7 +1270,7 @@ MonoBehaviour:
   onTriggerEnterEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 978745980}
+      - m_Target: {fileID: 1346704486}
         m_TargetAssemblyTypeName: BrennanHatton.UnityTools.CopyTransform, BrennanHattonUnityTools
         m_MethodName: CopyExistingTarget
         m_Mode: 1
@@ -1190,6 +1289,23 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   useStay: 0
+--- !u!114 &1104407057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890485267731087421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e8ecaddb3aa84c7281316d688ce12d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 0.4237
+  targetWeight: 1
+  onChangeWeight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1485513826091401365
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1264,6 +1380,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6883270e50789e44dba59ad1b1bfbe61, type: 3}
+--- !u!23 &1497813824137485239 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 23880606416788258, guid: 6883270e50789e44dba59ad1b1bfbe61,
+    type: 3}
+  m_PrefabInstance: {fileID: 1485513826091401365}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1764018684564789139
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1485,7 +1607,7 @@ PrefabInstance:
         type: 3}
       propertyPath: onCorrect.m_PersistentCalls.m_Calls.Array.data[4].m_Target
       value: 
-      objectReference: {fileID: 1741108594315777683}
+      objectReference: {fileID: 1497813824137485239}
     - target: {fileID: 5953372153065240507, guid: c9b7cb68f9fa34cca8f8c74b1445dc4f,
         type: 3}
       propertyPath: onIncorrect.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
@@ -1869,6 +1991,23 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   useStay: 0
+--- !u!114 &1747228999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391622833622500848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e8ecaddb3aa84c7281316d688ce12d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 0.4237
+  targetWeight: 1
+  onChangeWeight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &1391622833622500852 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 679009786153713173, guid: b543a89e2f3be4e14b7d5cc61b4a0f77,
@@ -2484,7 +2623,7 @@ PrefabInstance:
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 3312090871665568627}
+      objectReference: {fileID: 0}
     - target: {fileID: 5318190256394115479, guid: b543a89e2f3be4e14b7d5cc61b4a0f77,
         type: 3}
       propertyPath: onGrab.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -2541,7 +2680,7 @@ MonoBehaviour:
   onTriggerEnterEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 978745980}
+      - m_Target: {fileID: 765419758}
         m_TargetAssemblyTypeName: BrennanHatton.UnityTools.CopyTransform, BrennanHattonUnityTools
         m_MethodName: CopyExistingTarget
         m_Mode: 1
@@ -2560,6 +2699,23 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   useStay: 0
+--- !u!114 &2058152562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391622835113562530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e8ecaddb3aa84c7281316d688ce12d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 0.4237
+  targetWeight: 1
+  onChangeWeight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1391622835113562533 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 679009786153713174, guid: b543a89e2f3be4e14b7d5cc61b4a0f77,
@@ -2934,7 +3090,7 @@ MonoBehaviour:
   onTriggerEnterEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 978745980}
+      - m_Target: {fileID: 1139708535}
         m_TargetAssemblyTypeName: BrennanHatton.UnityTools.CopyTransform, BrennanHattonUnityTools
         m_MethodName: CopyExistingTarget
         m_Mode: 1
@@ -2953,6 +3109,23 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   useStay: 0
+--- !u!114 &565506487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391622835001059920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e8ecaddb3aa84c7281316d688ce12d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 0.4237
+  targetWeight: 1
+  onChangeWeight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &1391622835001059924 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 679009786153713173, guid: b543a89e2f3be4e14b7d5cc61b4a0f77,
@@ -3104,7 +3277,7 @@ MonoBehaviour:
   onTriggerEnterEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 978745980}
+      - m_Target: {fileID: 957803703}
         m_TargetAssemblyTypeName: BrennanHatton.UnityTools.CopyTransform, BrennanHattonUnityTools
         m_MethodName: CopyExistingTarget
         m_Mode: 1
@@ -3123,6 +3296,23 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   useStay: 0
+--- !u!114 &711731998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391622835427073217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e8ecaddb3aa84c7281316d688ce12d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 0.4237
+  targetWeight: 1
+  onChangeWeight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &1391622835427073221 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 679009786153713173, guid: b543a89e2f3be4e14b7d5cc61b4a0f77,
