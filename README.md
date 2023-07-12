@@ -1,6 +1,6 @@
 # HotHouse
 
-An in-development short narrative based VR escaperoom.<br />
+A short narrative based VR escaperoom.<br />
 <br />
 You are trapped in a luxurious hot-house against your will. <br >
 How did you end up here?<br >
