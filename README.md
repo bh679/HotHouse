@@ -18,6 +18,11 @@ And what does the Mafia have to do with it? <br >
 [BNG VRIF 1.82](https://assetstore.unity.com/packages/templates/systems/vr-interaction-framework-161066) (paid - import yourself)   <br />
 [Synty Polygon Town](https://assetstore.unity.com/packages/3d/environments/urban/polygon-town-pack-low-poly-3d-art-by-synty-121115) (paid - import yourself)  <br />
 [Synty Polygon Gang Warefare](https://assetstore.unity.com/packages/3d/environments/industrial/polygon-gang-warfare-low-poly-3d-art-by-synty-150589) (paid - import yourself)  <br />
+We may also be using:  <br />
+- Synty Knights?  <br />
+- Synty Towns?  <br />
+I need to double check
+
 
 ### Setup Guide <br />
  - Clone
