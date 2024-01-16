@@ -5714,6 +5714,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9132001948163861799}
     m_Modifications:
+    - target: {fileID: 1727276347721889179, guid: 651b318d3dfd2433d9728dc3ea3c8996,
+        type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2050157210947747956, guid: 651b318d3dfd2433d9728dc3ea3c8996,
         type: 3}
       propertyPath: m_Name
@@ -5774,6 +5779,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2050157211438982518, guid: 651b318d3dfd2433d9728dc3ea3c8996,
+        type: 3}
+      propertyPath: onButtonDown.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050157211438982518, guid: 651b318d3dfd2433d9728dc3ea3c8996,
+        type: 3}
+      propertyPath: onButtonDown.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 9132001948163861796}
+    - target: {fileID: 2050157211438982518, guid: 651b318d3dfd2433d9728dc3ea3c8996,
+        type: 3}
+      propertyPath: onButtonDown.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 539871131}
+    - target: {fileID: 2050157211438982518, guid: 651b318d3dfd2433d9728dc3ea3c8996,
+        type: 3}
+      propertyPath: onButtonDown.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 2634128103435655831}
+    - target: {fileID: 2050157211438982518, guid: 651b318d3dfd2433d9728dc3ea3c8996,
+        type: 3}
+      propertyPath: onButtonDown.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050157211438982518, guid: 651b318d3dfd2433d9728dc3ea3c8996,
+        type: 3}
+      propertyPath: onButtonDown.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050157211438982518, guid: 651b318d3dfd2433d9728dc3ea3c8996,
+        type: 3}
+      propertyPath: onButtonDown.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: TeleportPlayerToTransform
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050157211438982518, guid: 651b318d3dfd2433d9728dc3ea3c8996,
+        type: 3}
+      propertyPath: onButtonDown.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2058913014}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 651b318d3dfd2433d9728dc3ea3c8996, type: 3}
 --- !u!1001 &256768040
