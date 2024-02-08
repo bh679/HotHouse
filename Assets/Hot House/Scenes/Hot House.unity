@@ -51824,6 +51824,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2387263083043371201, guid: 908b0b650727a4f1b9ae63ad56943299,
+        type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3074367073458625087, guid: 908b0b650727a4f1b9ae63ad56943299,
         type: 3}
       propertyPath: m_Layer
@@ -51958,6 +51963,11 @@ PrefabInstance:
         type: 3}
       propertyPath: onShootEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3074367073877492935, guid: 908b0b650727a4f1b9ae63ad56943299,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.017
       objectReference: {fileID: 0}
     - target: {fileID: 3074367073895449828, guid: 908b0b650727a4f1b9ae63ad56943299,
         type: 3}
