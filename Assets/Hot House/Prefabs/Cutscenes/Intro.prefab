@@ -1998,7 +1998,7 @@ PlayableDirector:
   - key: {fileID: 559296786280619901, guid: 28190d72b6b474d3e98e4520064a2258, type: 2}
     value: {fileID: 1241424582}
   - key: {fileID: -1760067855371746498, guid: 28190d72b6b474d3e98e4520064a2258, type: 2}
-    value: {fileID: 1726417605}
+    value: {fileID: 8452291007628886268}
   - key: {fileID: 6136658712337551387, guid: 28190d72b6b474d3e98e4520064a2258, type: 2}
     value: {fileID: 1290660213}
   - key: {fileID: 6409223519468436520, guid: 28190d72b6b474d3e98e4520064a2258, type: 2}
@@ -2027,6 +2027,10 @@ PlayableDirector:
     value: {fileID: 1135509586}
   - key: {fileID: 5736284000630008606, guid: 28190d72b6b474d3e98e4520064a2258, type: 2}
     value: {fileID: 311548171}
+  - key: {fileID: -1062518281248277, guid: 28190d72b6b474d3e98e4520064a2258, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 7309968820399190321, guid: 28190d72b6b474d3e98e4520064a2258, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References:
     - 4d16699c74c41417f9a7869dc695b0bb: {fileID: 1339086597}
@@ -2763,6 +2767,7 @@ RectTransform:
   - {fileID: 744850006}
   - {fileID: 1241424581}
   - {fileID: 7536755315272195698}
+  - {fileID: 6706870983800274331}
   - {fileID: 1726417606}
   - {fileID: 1884215714}
   m_Father: {fileID: 1290660211}
@@ -3068,7 +3073,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1726417606
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3082,7 +3087,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1627435150}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3515,7 +3520,7 @@ RectTransform:
   - {fileID: 1135509587}
   - {fileID: 311548172}
   m_Father: {fileID: 1627435150}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4536,6 +4541,159 @@ MonoBehaviour:
   OnPlayerTeleported:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &8452291007628886268
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6706870983800274331}
+  - component: {fileID: 2168612998113697815}
+  - component: {fileID: 7940863033206329955}
+  - component: {fileID: 5547965075593135733}
+  - component: {fileID: 3782581450077568620}
+  - component: {fileID: 4924213139348697942}
+  m_Layer: 5
+  m_Name: Hothouse Logo - Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6706870983800274331
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8452291007628886268}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1627435150}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -14.2}
+  m_SizeDelta: {x: 1235, y: 939}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2168612998113697815
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8452291007628886268}
+  m_CullTransparentMesh: 1
+--- !u!114 &7940863033206329955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8452291007628886268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 6b268699f6f174bf398312054325b638, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5547965075593135733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8452291007628886268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7e7e2f402234427482c5ecca7834dbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 7940863033206329955}
+--- !u!114 &3782581450077568620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8452291007628886268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 237f88d3433e744f197f3aa9b9a0eeb2, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5547965075593135733}
+          m_TargetAssemblyTypeName: BrennanHatton.UnityTools.UIImageFade, BrennanHattonUnityTools
+          m_MethodName: StartFadeToClear
+          m_Mode: 4
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 3
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &4924213139348697942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8452291007628886268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66563b6a4e0c2b74b90057612789d8a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 0
+  TimedEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5547965075593135733}
+        m_TargetAssemblyTypeName: BrennanHatton.UnityTools.UIImageFade, BrennanHattonUnityTools
+        m_MethodName: StartFadeToOpaque
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0.1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  repeats: 0
+  onEnable: 1
+  repeatOnEnable: 1
 --- !u!1001 &5942128955712491636
 PrefabInstance:
   m_ObjectHideFlags: 0
